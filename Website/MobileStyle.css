@@ -1,0 +1,225 @@
+﻿@media screen and (max-width: 620px){
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: #42455a;
+    }
+
+   
+
+    html, body {
+        height: 0;
+    }
+
+    .menu ul {
+        display: inline-flex;
+        margin: 35px;
+        margin-left:-25px;
+    }
+
+        .menu ul li {
+            list-style: none;
+            margin: 0 15px;
+            color: #b2b1b1;
+            cursor: pointer;
+        }
+
+
+    .logo img {
+        width: 50px;
+        margin-top: -7px;
+        margin-left:10px;
+        margin-right: 20px;
+    }
+
+    .Active {
+        color: #19dafa !important;
+    }
+
+    .signup-a {
+        z-index: -1;
+        margin-top: 650px;
+        margin-right: 150px;
+        text-decoration: none;
+        color: #fff;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        background-image: linear-gradient(#42455a,#42455a), radial-gradient(circle at top left,#3399ff,#00FF00);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        
+    }
+
+        .signup-a span {
+            display: block;
+            padding: 8px 20px;
+        }
+
+    .banner {
+        width: 80%;
+        height: 20%;
+        top: 25%;
+        left: 130px;
+        position: absolute;
+        color: #fff;
+    }
+
+    .app-text {
+        width: 50%;
+        float: left;
+    }
+
+        .app-text h1 {
+            margin-bottom: 5px;
+            font-size: 43px;
+            width: 640px;
+            position: relative;
+            margin-left: 5px;
+        }
+
+        .app-text p {
+            width: 450px;
+            font-size: 15px;
+            margin: 30px 0 30px 40px;
+            line-height: 25px;
+            color: #919191;
+        }
+
+    .app-picture {
+        margin-left: 100px;
+        margin-top: 30px;
+        width: 300px;
+        border-bottom-left-radius: 50%
+    }
+
+        .app-picture img {
+            width: 100%;
+            margin-top: -20px;
+            padding-left: 50px;
+        }
+
+    .play-btn {
+        margin-left: 40px;
+        display: inline-flex;
+        width:200px;
+    }
+
+    .play-btn-inner {
+        height: 60px;
+        width: 60px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        background-image: linear-gradient(#42455a,#42455a), radial-gradient(circle at top left,#3399ff,#00FF00);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        text-align: center;
+    }
+
+        .play-btn-inner .fa {
+            padding: 18px 0;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+    small {
+        margin: auto 20px;
+        cursor: pointer;
+        font-size: 12px;
+        color: #19dafa;
+        letter-spacing: 3px;
+    }
+
+    .quick-links {
+        left: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+        .quick-links ul {
+            display: inline-flex;
+            margin: 15px auto;
+            text-align: center;
+            
+        }
+
+            .quick-links ul li {
+                list-style: none;
+                margin: 0 50px;
+                cursor: pointer;
+            }
+
+                .quick-links ul li .fa {
+                    font-size: 20px;
+                    color: #66ff66;
+                    border: 1px solid #999;
+                    padding: 5px;
+                    display: block;
+                }
+
+                .quick-links ul li p {
+                    margin-top: 15px;
+                    font-size: 10px;
+                    color: #fff;
+                }
+
+
+    a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .social {
+        right: -100px;
+        margin-bottom:330px;
+        position: absolute;
+    }
+
+        .social ul li {
+            list-style: none;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+            .social ul li a {
+                color: #999;
+                padding: 5px;
+                display: block;
+            }
+
+    @viewport {
+        width: device-width;
+        zoom: 1.0;
+    }
+
+
+    .h1 {
+        max-width: 10%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
