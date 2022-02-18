@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net.Mail;
 using System.Web;
 
 namespace Website
@@ -112,8 +113,47 @@ namespace Website
                 int rows = cmd.ExecuteNonQuery();
                 conn.Close();
             }
+
+           
+        }
+        public static bool IsvalidEmail(string textboxEmail)
+        {
+            try 
+            { 
+            MailAddress mail = new MailAddress(textboxEmail);
+                return true;
+            } 
+            catch(Exception e)
+            {
+                return false;
+            }
+
         }
 
+        public bool ValidData(string username, string email, string connectionString)
+        {
+            var c = new SqlConnection(connectionString);
+            var cmdUsername = new SqlCommand("SELECT COUNT(*) FROM Person WHERE UserName = @userName OR email = @email;", c);
+            cmdUsername.Parameters.AddWithValue("userName", username);
+            cmdUsername.CommandType = System.Data.CommandType.Text;
+            cmdUsername.Parameters.AddWithValue("email", email);
+
+            c.Open();
+            try
+            {
+                return (int)cmdUsername.ExecuteScalar() > 0;
+            }
+            catch (Exception ex)
+            {
+                //log exception
+
+                return false;
+            }
+            finally
+            {
+                c.Close();
+            }
+        }
     }
    
     }

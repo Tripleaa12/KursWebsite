@@ -16,6 +16,9 @@ namespace Website
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            dblayer dblayer = new dblayer();
+            dblayer.IsvalidEmail(TextBoxemail.Text);
+            bool isvalidEmail = dblayer.IsvalidEmail(TextBoxemail.Text);
             if (TextBoxpassword.Text != TextBoxconfirm.Text)
             {
                 Labelpassworderror.Visible = true;
@@ -33,22 +36,30 @@ namespace Website
                 return;
             }
 
-            else if (TextBoxpassword.Text == TextBoxconfirm.Text)
+            else if(isvalidEmail == false)
             {
-                RegisterWork.Visible = true;
+                Labelwrongemail.Visible = true;
             }
             
-          
+            else
+            {
+                dblayer.InsertPerson(TextBoxname.Text, TextBoxemail.Text, TextBoxpassword.Text);
+                Response.Redirect("login.aspx");
+            }
+
+            
+           
 
 
+              
 
+            
+         
+         
 
-
-            dblayer dblayer = new dblayer();
-
-            dblayer.InsertPerson(TextBoxname.Text, TextBoxemail.Text, TextBoxpassword.Text);
 
             
         }
+        
     }
 }

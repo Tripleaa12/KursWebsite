@@ -238,7 +238,7 @@ a, a:hover, a:focus, a:active {
         </div>
         <div class="banner">
             <div class="app-text">
-                <h1>PC kurs</h1>
+                <h1>Redigerings Kurs</h1>
                 
                 <p><b>Info:</b>
                     <br />

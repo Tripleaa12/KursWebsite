@@ -18,6 +18,13 @@ namespace Website
         {
             dblayer dblayer = new dblayer();
             dblayer.InsertValuesToDB(TextBoxUserName.Text, Label1.Text, TextBox1.Text, Label2.Text, TextBox2.Text, Label3.Text, TextBox3.Text);
+
+            if(string.IsNullOrEmpty(TextBoxUserName.Text) || string.IsNullOrEmpty(TextBox1.Text) || string.IsNullOrEmpty(TextBox3.Text) || string.IsNullOrEmpty(TextBox2.Text))
+            {
+                LabelWronginput.Visible = true;
+
+                return;
+            }
         }
 
         protected void Button2_Click(object sender, EventArgs e)

@@ -41,14 +41,15 @@
   	<div class="input-group">
           
   	  <label>Password</label>
-          <asp:TextBox ID="TextBoxpassword" runat="server"></asp:TextBox>
+          <asp:TextBox ID="TextBoxpassword" runat="server" TextMode="Password"></asp:TextBox>
   	</div>
   	<div class="input-group">
   	  <label>Confirm password</label>
-  	  <asp:TextBox ID="TextBoxconfirm" runat="server" ></asp:TextBox>
+  	  <asp:TextBox ID="TextBoxconfirm" runat="server" TextMode="Password" ></asp:TextBox>
   	</div>
-      <asp:Label ID="LabelNoInput" runat="server" Text="Inputs needed" Visible="false"></asp:Label>
-      <asp:Label ID="Labelpassworderror" runat="server" Text="passwords has to match"  Visible="false"></asp:Label>
+      <asp:Label ID="LabelNoInput" runat="server" Text="Inputs needed" Visible="false" ForeColor="Red" ></asp:Label>
+      <asp:Label ID="Labelpassworderror" runat="server" Text="passwords has to match" ForeColor="Red" Visible="false"></asp:Label>
+      <asp:Label ID="Labelwrongemail" runat="server" Text="Enter a correct email" ForeColor="Red"  Visible="false"></asp:Label>
   	<div class="input-group">
           <asp:Label ID="RegisterWork" runat="server" Text="Du har registrert deg, gå videre til login." Visible="false"></asp:Label>
           

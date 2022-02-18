@@ -30,9 +30,9 @@
           <asp:Button ID="Button1" CssClass="btn" OnClick="Button1_Click" runat="server" Text="Login" Height="38px" Width="555px"/>
   		
   	</div>
-      <asp:Label ID="LabelLoginError" runat="server" Text="Invalid username or password"  Visible="false"></asp:Label>
+      <asp:Label ID="LabelLoginError" ForeColor="Red" runat="server" Text="Invalid username or password"  Visible="false"></asp:Label>
       <br />
-      <asp:Label ID="LabelNoInput" runat="server" Text="Username or password can not be empty" Visible="false"></asp:Label>
+      <asp:Label ID="LabelNoInput" ForeColor="Red" runat="server" Text="Username or password can not be empty" Visible="false"></asp:Label>
   	<p>
   		Not yet a member? <a href="WebForm1.aspx">Sign up</a>
   	</p>

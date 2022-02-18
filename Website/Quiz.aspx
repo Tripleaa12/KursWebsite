@@ -39,7 +39,7 @@
    
 
         </h1>
-        <p>Før du tar denne testen, hva er fornavnet ditt</p>
+        <p>Før du tar denne testen, hva er fornavnet ditt?</p>
 
         
         <asp:TextBox ID="TextBoxUserName" runat="server"></asp:TextBox>
@@ -65,14 +65,16 @@
 
                        <asp:Label ID="Label3" runat="server" Text="Hva heter det når du deler to video deler fra hverandre?"></asp:Label></td><td>
                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></td>
+                  
                </tr>
                <tr>
                    <td></td><td>
                        <asp:Button ID="ButtonSubmit" CssClass="btn" runat="server" Text="Send inn" OnClick="ButtonSubmit_Click" /></td>
+                    
                </tr>
            </table>
        
-                 
+                 <asp:Label ID="LabelWronginput" runat="server" Text="Du må skrive svar inn i alle feltene" Visible="false"></asp:Label>
                   <img src="Quiz.jpg" class="auto-style1" />
          
         <p>
